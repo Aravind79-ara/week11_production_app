@@ -1,0 +1,6 @@
+groups:
+  - name: app-alerts
+    rules:
+      - alert: AppDown
+        expr: up == 0
+        for: 1m
